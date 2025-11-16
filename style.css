@@ -14,11 +14,12 @@ body{
     border-radius: 0.5rem;
     box-sizing: border-box;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+    z-index: 0;
 }
 /* NAVBAR */
 .navbar{
-    height: 115px;
-    
+    height: 80px;
+    z-index: 1;
     padding: 16px 10px 16px 36px;
     display: flex;
     background-color: white;
@@ -33,8 +34,8 @@ body{
 .logo{
     background-image: url("logo.jpg");
     height: 80px;
-    width: 160px;
-    padding-top: 20px;
+    width: 200px;
+    
 
    
     background-size: contain;
@@ -48,32 +49,16 @@ body{
     align-items: center;
     justify-content: center;
 
+    padding-left: 30px;
     
-    
-    margin-left: 20px; 
+     
 }
 
 
 .box :first-child{
     margin-left: 20px;
 }
-/* ul{
-    list-style: none;
-    margin-left: 120px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    
 
-}
-ul li{
-    display: inline-block;
-    margin-right: 40px;
-}
-ul li :last-child{
-    margin-right: 60px;
-} */
-/* ICONS */
 .icons{
     position: absolute;
     right: 80px;
@@ -84,18 +69,17 @@ ul li :last-child{
     align-items: center;
     box-sizing: border-box;
     padding-bottom: 18px;
+    box-sizing: border-box;
     
 }
 .icons i{
     font-size: 27px;
-}
-.icons i{
     cursor: pointer;
-    transition: tranform 0.9s ease;
+    transition: transform 0.6s ease;
 
 }
 .icons i:hover{
-    transform: translateY(-4px);
+    transform: translateY(-8px);
     color: gray;
 }
 /* HOVER EFFECT */
@@ -142,6 +126,92 @@ ul li :last-child{
     z-index: 1;
 
 }
-
-
+/* HERO SECTION */
+.hero-div{
+    z-index: 2;
+    width: 100%;
+    height: 490px;
+    background-color: blue;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f4739;
+}
+.slider{
+    position: relative;
+    height: 450px;
+    width: 90%;
     
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    height: 450px;
+    
+    inset: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    transform: scale(1.08);
+    opacity: 0;
+    animation: sliding 20s infinite ease-in-out;
+    animation-fill-mode: both;
+    will-change: opacity, transform;
+}
+.slide-line{
+    color: white;
+    font-size: 43px;
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    animation: fading 20s infinite ease-in-out;
+    animation-fill-mode: both;
+}
+.line{
+    width: 1000px;
+    height: 2px;
+    position: absolute;
+    bottom: 50px;
+    background-color: white;
+    opacity: 0.2;
+    left: 20px;
+    right: 20px;
+}
+/* Sliding animations */
+@keyframes sliding{
+    0% {opacity: 0; transform: scale(1.08);}
+    5% {opacity: 1; transform: scale(1);}
+    30% {opacity: 1; transform: scale(1);}
+    35% {opacity: 0; transform: scale(1.05);}
+    100% {opacity: 0; transform: scale(1.08);}
+}
+/* Text Fading animation */
+@keyframes fading{
+    0% {opacity: 0; transform: translateY(40px);}
+    10% {opacity: 1; transform: translateY(0px);}
+    30% {opacity: 1; transform: translateY(0px);}
+    35% {opacity: 0; transform: translateY(-40px);}
+    100%{opacity: 0; transform: translateY(0px);}
+}
+.slide:nth-child(1){ animation-delay: 0s;}
+.slide:nth-child(2){ animation-delay: 5s;}
+.slide:nth-child(3){ animation-delay: 10s;}
+.slide:nth-child(4){ animation-delay: 15s;}
+
+
+.slide:nth-child(1) .slide-line{ animation-delay: 0s;}
+.slide:nth-child(2) .slide-line{ animation-delay: 5s;}
+.slide:nth-child(3) .slide-line{ animation-delay: 10s;}
+.slide:nth-child(4) .slide-line{ animation-delay: 15s;}
+
+
+
