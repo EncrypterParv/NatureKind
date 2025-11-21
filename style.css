@@ -80,13 +80,13 @@ body{
 .icons{
     position: absolute;
     right: 20px;
-    height: 135px;
+    height: 100px;
     width: auto;
     display: flex;
     gap: 40px;
     align-items: center;
     box-sizing: border-box;
-    padding-bottom: 18px;
+    
     box-sizing: border-box;
     
 }
