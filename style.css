@@ -769,6 +769,17 @@ footer .end .bottom {
     opacity: 0.6;
     text-align: center;
 }
+/* FADE IN SCROLL */
+.fade-in{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: transform 2.2s ease, opacity 2.2s ease;
+}
+.fade-in.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 
