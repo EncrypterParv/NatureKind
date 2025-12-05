@@ -170,7 +170,7 @@ body{
 .social-panel a{
     color: #2f4739;
     font-size: 20px;
-    transition: transform 0.3 ease, color 0.3 ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 .social-panel a:hover{
     transform: translateX(5px);
@@ -412,6 +412,9 @@ h2{
     right: 30%;
     
     border: none;
+}
+.add-cart:hover{
+    cursor: pointer;
 }
 .product-info{
     padding: 18px;
@@ -778,6 +781,26 @@ footer .end .bottom {
 .fade-in.visible{
     opacity: 1;
     transform: translateY(0);
+}
+/* POP EFFECT */
+.cart-popup{
+    position: fixed;
+    bottom: 75%;
+    left: 45%;
+    background-color: #2f4739;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.25);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: popin 0.6s forwards; 
+    z-index: 9999;
+}
+@keyframes popin {
+    0%{opacity: 0; transform:  translateY(20px);}
+    100%{opacity: 1; transition: translateY(0px);}
 }
 
 
