@@ -802,6 +802,183 @@ footer .end .bottom {
     0%{opacity: 0; transform:  translateY(20px);}
     100%{opacity: 1; transition: translateY(0px);}
 }
+/* RESPONSIVE  */
+
+@media (max-width: 992px) {
+    .menu {
+        gap: 10px;
+        padding-left: 10px;
+    }
+    .icons {
+        right: 10px;
+        gap: 20px;
+    }
+    .product-card {
+        width: 260px;
+        height: auto;
+    }
+    .care-sections,
+    .food-items {
+        gap: 20px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .social-panel {
+        display: none;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-div {
+        height: 350px;
+    }
+
+    .slider {
+        height: 320px;
+    }
+
+    .slide {
+        height: 320px;
+    }
+
+    .templates {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .templates-option {
+        width: 45%;
+        min-width: 200px;
+        height: 250px;
+    }
+
+    .rate-area {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 45%;
+        min-width: 200px;
+    }
+
+    .care-sections {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .care-option {
+        width: 45%;
+        height: 260px;
+    }
+
+    .vid-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .video {
+        width: 90%;
+        height: auto;
+    }
+
+    .food-items {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .food-option {
+        width: 45%;
+        height: 260px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .announcement {
+        font-size: 11px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .menu .box {
+        font-size: 15px;
+        padding: 5px;
+        width: auto !important;
+    }
+
+    .hero-div {
+        height: 260px;
+    }
+
+    .slider,
+    .slide {
+        height: 240px;
+    }
+
+    .slide-line {
+        font-size: 20px;
+        left: 10px;
+    }
+
+    .templates-option {
+        width: 90%;
+        height: 230px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .care-option {
+        width: 90%;
+        height: 230px;
+    }
+
+    .food-option {
+        width: 90%;
+        height: 230px;
+    }
+
+    footer .credits {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    footer .credits div {
+        border: none !important;
+    }
+}
+
+
+
 
 
 

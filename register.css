@@ -146,3 +146,39 @@ body {
         padding-top: 20px;
     }
 }
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-image {
+        width: 100%;
+        height: 220px;
+    }
+
+    .right-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-wrapper h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .input-box input {
+        padding: 10px 35px 10px 10px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+}

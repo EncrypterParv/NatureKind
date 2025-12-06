@@ -126,3 +126,29 @@ body {
 .register-link p a:hover {
     text-decoration: underline;
 }
+/* RESPONSIVE */
+@media (max-width: 600px){
+    .wrapper{
+        width: 100%;  
+        padding: 20px;
+    }
+
+    body{
+        padding: 10px; 
+    }
+
+    .input-box input{
+        padding: 10px 35px 10px 10px;
+    }
+
+    .btn{
+        padding: 10px;
+    }
+
+    .forget{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
